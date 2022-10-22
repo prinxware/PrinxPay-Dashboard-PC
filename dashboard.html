@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>Prinxpay-Dashboard</title>
+</head>
+<body>
+    <aside>
+        <div class="logo">
+            <a href="#"><img src="images/Prinxpaylogo2.svg" alt=""></a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="dashboard.html" class="click"><i class="fas fa-th-large"></i>Dashboard</a>
+                </li>
+                <li id="Active"> 
+                    <a href="messages.html"  class="click"><i class="fas fa-envelope"></i>Messages</a>
+                </li>
+                <li>
+                    <a href="account.html"><i class="fas fa-user-friends"></i>Accounts</a>
+                </li>
+                <li>
+                    <a href="payments.html"><i class="fas fa-redo"></i>Payments</a>
+                </li>
+                <li>
+                    <a href="transfer.html"><i class="fas fa-random"></i>Transfer</a>
+                </li>
+                <li>
+                    <a href="support.html"><i class="fas fa-headset"></i>Support</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="log">
+            <a href="">Nancy CN</a>
+        </div>
+    </aside>
+    <main>
+        <div class="profile">
+            <h1>Hi, Nancy!</h1>
+            <div class="icons">
+                <button class="icon-btn icon-btn1">
+                    <i class="fas fa-cog"></i>          
+                </button>
+                <button class="icon-btn icon-btn2">
+                    <i class="far fa-user-circle"></i>
+                </button>
+            </div>
+        </div>
+        <div class="accounts">
+            <h2>Accounts</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="account">
+                        <h3>Savings account</h3>
+                        <p>X2256</p>
+                    </div>
+                    <div class="ballance">
+                        <span>N1,300,000</span>
+                        <p>Ballance</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="account">
+                        <h3>Dollar account</h3>
+                        <p>X5676</p>
+                    </div>
+                    <div class="ballance">
+                        <span>$3,400</span>
+                        <p>Ballance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="utilities">
+            <button class="u-btn">
+                <i class="fas fa-paper-plane"></i>
+                <p>Transfer</p>
+            </button>
+            <button class="u-btn">
+                <i class="fas fa-check-circle"></i>
+                <p>Pay bills</p>
+            </button>
+            <button class="u-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Airtime</p>
+            </button>
+        </div>
+
+        <div class="h-container">
+            <div class="left-con">
+                <div class="details">
+                    <h1>Transactions</h1>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="transaction-info">
+                    <ul>
+                        <li>
+                            <div>
+                                <p>Transfer from Prince</p>
+                                <p class="date">Oct 5 2022</p>
+                            </div>
+                            <div>
+                                <span class="receive">$80</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>Sharwama spot</p>
+                                <p class="date">Oct 5 2022</p>
+                            </div>
+                            <div>
+                                <span class="debit">$20</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>Jumia order</p>
+                                <p class="date">Sept 5 2022</p>
+                            </div>
+                            <div>
+                                <span class="debit">$75</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>Transfer from mom</p>
+                                <p class="date">Sept 5 2022</p>
+                            </div>
+                            <div>
+                                <span class="receive">$100</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-con">
+                <div class="r-card">
+                    <div class="details">
+                        <h1>Payments</h1>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="payments-info">
+                        <h1>No Payments</h1>
+                    </div>
+                </div>
+                <div class="r-card">
+                    <div class="details">
+                        <h1>Card maintainace</h1>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="card-info">
+                        <ul>
+                            <li>
+                                <div>
+                                    <p>Naira card(X2256)</p>
+                                </div>
+                                <div>
+                                    <span>$30</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/navactive.js"></script>
+</body>
+</html>

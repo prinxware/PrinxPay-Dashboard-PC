@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  transition: 0.4s;
+}
+
+body {
+  background-color: white;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+aside {
+  font-family: "Roboto";
+  background-color: #9381FF;
+  min-height: 100vh;
+  width: 16%;
+  padding: 2rem 1rem;
+  color: white;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+aside .logo {
+  padding: 0.7rem 0;
+  border-bottom: 2px solid #B8B8FF;
+  margin-bottom: 4rem;
+}
+aside .log {
+  border: 2px solid #B8B8FF;
+  position: absolute;
+  bottom: 0px;
+  padding: 0.5rem 1.5rem;
+  right: 50px;
+  margin-bottom: 2rem;
+}
+aside .log a {
+  padding: 0.5rem 0;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+aside nav ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+aside nav ul li {
+  padding: 0.5rem 2rem;
+  width: 100%;
+  transition: 0.4s;
+}
+aside nav ul li a {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 5ms;
+}
+aside nav ul li a .fas {
+  margin-right: 0.7rem;
+}
+aside nav ul li:hover {
+  background-color: #7863F9;
+}
+
+main {
+  font-family: "Roboto";
+  width: 100%;
+  height: 100vh;
+  background-color: #7863F9;
+  padding: 1rem 3rem;
+}
+main .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .profile h1 {
+  font-size: 28px;
+  color: white;
+  font-weight: 500;
+}
+main .profile .icons {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+main .profile .icons .icon-btn {
+  border-style: none;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50px;
+  padding: 0.8rem 0.9rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+main .profile .icons .icon-btn .far, main .profile .icons .icon-btn .fas {
+  font-size: 23px;
+  color: #9381FF;
+}
+main .profile .icons .icon-btn:hover {
+  background-color: #9381FF;
+}
+main .profile .icons .icon-btn:hover .fas {
+  color: white;
+}
+main .profile .icons .icon-btn:hover .far {
+  color: white;
+}
+main .msg-con {
+  width: 100%;
+  height: 575px;
+  background-color: white;
+  padding: 2rem 2rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+main .msg-con .msg-box {
+  color: white;
+  padding: 2rem 3rem;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 440px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+main .msg-con .msg-box li {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 20px;
+}
+main .msg-con .msg-box li .inbox {
+  background-color: #B8B8FF;
+  padding: 3rem;
+  width: 100%;
+  display: inline-block;
+  border-radius: 30px;
+  text-align: left;
+}
+main .msg-con .msg-box li .sent {
+  background-color: #9381FF;
+  padding: 3rem;
+  width: 100%;
+  display: inline-block;
+  border-radius: 30px;
+  text-align: right;
+}
+main .msg-con .msg-box::-webkit-scrollbar {
+  display: none;
+}
+main .msg-con .send-text {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+main .msg-con .send-text input[type=text] {
+  width: 100%;
+  padding: 1rem 3rem;
+  background-color: #9381FF;
+  border-radius: 50px;
+  border-style: none;
+  color: white;
+  font-size: 15px;
+}
+main .msg-con .send-text .send-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-style: none;
+  background-color: #9381FF;
+  color: white;
+  cursor: pointer;
+}/*# sourceMappingURL=messages.css.map */

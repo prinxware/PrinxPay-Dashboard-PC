@@ -1,0 +1,72 @@
+@import 'config';
+
+
+
+ body{
+    background-color: $primary-color;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+ }
+ .logo{
+    margin: 1.2rem auto;
+ }
+ .container{
+    font-family: $font-stack;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 4rem;
+    background-color: white;
+    width: 500px;
+    min-height: 350px;
+    border-radius: 20px;
+    h1{
+        font-size: 15;
+        font-weight: 500;
+        color: $primary-color;
+        margin-bottom: 2rem;
+    }
+    form{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+
+        input[type = Email]{
+            width: 100%;
+            padding: .7rem 2rem;
+            margin-bottom: 1.5rem;
+            border: 2px solid $primary-color;
+            border-radius: 50px;
+        }
+        input[type = Password]{
+            width: 100%;
+            padding: .7rem 2rem;
+            margin-bottom: 2rem;
+            border: 2px solid $primary-color;
+            border-radius: 50px;
+        }
+        .btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+            Button[type = Submit]{
+                border-radius: 50px;
+                border-style: none;
+                background-color: $primary-color;
+                padding: .8rem 3rem;
+                cursor: pointer;
+                color: white;
+                font-size: 15px;
+            }
+            .signup{
+                color: $light-color;
+                font-size: 17px;
+            }
+        }
+    }
+ }

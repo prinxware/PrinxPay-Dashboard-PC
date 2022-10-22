@@ -1,0 +1,314 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  transition: 0.4s;
+}
+
+body {
+  background-color: white;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+aside {
+  font-family: "Roboto";
+  background-color: #9381FF;
+  min-height: 100vh;
+  width: 16%;
+  padding: 2rem 1rem;
+  color: white;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+aside .logo {
+  padding: 0.7rem 0;
+  border-bottom: 2px solid #B8B8FF;
+  margin-bottom: 4rem;
+}
+aside .log {
+  border: 2px solid #B8B8FF;
+  position: absolute;
+  bottom: 0px;
+  padding: 0.5rem 1.5rem;
+  right: 50px;
+  margin-bottom: 2rem;
+}
+aside .log a {
+  padding: 0.5rem 0;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+aside nav ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+aside nav ul li {
+  padding: 0.5rem 2rem;
+  width: 100%;
+  transition: 0.4s;
+}
+aside nav ul li a {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 5ms;
+}
+aside nav ul li a .fas {
+  margin-right: 0.7rem;
+}
+aside nav ul li:hover {
+  background-color: #7863F9;
+}
+
+main {
+  font-family: "Roboto";
+  width: 100%;
+  height: 100vh;
+  background-color: #F8F8F8;
+  padding: 1rem 3rem;
+}
+main .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .profile h1 {
+  font-size: 28px;
+  color: #9381FF;
+  font-weight: 500;
+}
+main .profile .icons {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+main .profile .icons .icon-btn {
+  border-style: none;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50px;
+  padding: 0.8rem 0.9rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+main .profile .icons .icon-btn .far, main .profile .icons .icon-btn .fas {
+  font-size: 23px;
+  color: #9381FF;
+}
+main .profile .icons .icon-btn:hover {
+  background-color: #7863F9;
+}
+main .profile .icons .icon-btn:hover .fas {
+  color: white;
+}
+main .profile .icons .icon-btn:hover .far {
+  color: white;
+}
+main .accounts {
+  padding: 1rem 0;
+}
+main .accounts h2 {
+  font-size: 19px;
+  font-weight: 400;
+  color: #B8B8FF;
+  margin-bottom: 0.5rem;
+}
+main .accounts .cards {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2;
+  gap: 1rem;
+}
+main .accounts .cards .card {
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  height: 100px;
+  width: 100%;
+  background-color: #9381FF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .accounts .cards .card .account {
+  text-align: left;
+}
+main .accounts .cards .card .account h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.8rem;
+}
+main .accounts .cards .card .account p {
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+main .accounts .cards .card .ballance {
+  text-align: right;
+}
+main .accounts .cards .card .ballance span {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+main .accounts .cards .card .ballance p {
+  margin-top: 0.8rem;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+main .utilities {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
+  transition: 1ms;
+}
+main .utilities .u-btn {
+  cursor: pointer;
+  border-style: none;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  height: 80px;
+  width: 100px;
+  background-color: #9381FF;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-direction: column;
+  transition: 0.4s;
+}
+main .utilities .u-btn .fas {
+  font-size: 26px;
+  font-weight: 600;
+}
+main .utilities .u-btn p {
+  font-size: 15px;
+  font-weight: 500;
+}
+main .utilities .u-btn:hover {
+  background-color: #7863F9;
+}
+main .h-container {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+main .h-container .left-con {
+  width: 100%;
+  min-height: 360px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+}
+main .h-container .left-con .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #7863F9;
+}
+main .h-container .left-con .details h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+main .h-container .left-con .details .fas {
+  font-size: 25px;
+  cursor: pointer;
+}
+main .h-container .left-con .transaction-info {
+  text-align: left;
+  color: #B8B8FF;
+  padding: 1.5rem 0.4rem;
+}
+main .h-container .left-con .transaction-info li {
+  padding: 0.3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .h-container .left-con .transaction-info li p {
+  font-size: 17px;
+  margin-bottom: 0.5rem;
+}
+main .h-container .left-con .transaction-info li .date {
+  color: #9381FF;
+  font-size: 13px;
+}
+main .h-container .left-con .transaction-info li .debit {
+  color: red;
+}
+main .h-container .left-con .transaction-info li .receive {
+  color: green;
+}
+main .h-container .right-con {
+  width: 100%;
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .h-container .right-con .r-card {
+  padding: 1rem 2rem;
+  background-color: white;
+  width: 100%;
+  min-height: 175px;
+  border-radius: 15px;
+}
+main .h-container .right-con .r-card .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #7863F9;
+}
+main .h-container .right-con .r-card .details h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+main .h-container .right-con .r-card .details .fas {
+  font-size: 25px;
+  cursor: pointer;
+}
+main .h-container .right-con .r-card .payments-info {
+  text-align: center;
+  color: #9381FF;
+  padding: 2rem 2rem;
+}
+main .h-container .right-con .r-card .payments-info h1 {
+  font-size: 27px;
+  font-weight: 500;
+}
+main .h-container .right-con .r-card .card-info {
+  text-align: left;
+  color: #B8B8FF;
+  padding: 2rem 0.4rem;
+}
+main .h-container .right-con .r-card .card-info li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .h-container .right-con .r-card .card-info li span {
+  color: red;
+}/*# sourceMappingURL=dashboard.css.map */

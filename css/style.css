@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  transition: 0.4s;
+}
+
+body {
+  background-color: #9381FF;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  margin: 1.2rem auto;
+}
+
+.container {
+  font-family: "Roboto";
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 4rem;
+  background-color: white;
+  width: 500px;
+  min-height: 350px;
+  border-radius: 20px;
+}
+.container h1 {
+  font-size: 15;
+  font-weight: 500;
+  color: #9381FF;
+  margin-bottom: 2rem;
+}
+.container form {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+.container form input[type=Email] {
+  width: 100%;
+  padding: 0.7rem 2rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #9381FF;
+  border-radius: 50px;
+}
+.container form input[type=Password] {
+  width: 100%;
+  padding: 0.7rem 2rem;
+  margin-bottom: 2rem;
+  border: 2px solid #9381FF;
+  border-radius: 50px;
+}
+.container form .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.container form .btn Button[type=Submit] {
+  border-radius: 50px;
+  border-style: none;
+  background-color: #9381FF;
+  padding: 0.8rem 3rem;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+}
+.container form .btn .signup {
+  color: #B8B8FF;
+  font-size: 17px;
+}/*# sourceMappingURL=style.css.map */

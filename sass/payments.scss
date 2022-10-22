@@ -1,0 +1,115 @@
+@import 'config';
+
+
+body{
+    background-color: white;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+aside{
+    font-family: $font-stack;
+    background-color: $primary-color;
+    min-height: 100vh;
+    width: 16%;
+    padding: 2rem 1rem;
+    color: white;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    .logo{
+        padding: .7rem 0;
+        border-bottom: 2px solid $light-color;
+        margin-bottom: 4rem;
+    }
+    .log{
+        border: 2px solid $light-color;
+        position: absolute;
+        bottom: 0px;
+        padding: .5rem 1.5rem ;
+        right: 50px;
+        margin-bottom: 2rem;
+        a{
+            padding: .5rem 0;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+    nav{
+        ul{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: .4rem;
+            li{
+                padding: .5rem 2rem;
+                width: 100%;
+                transition: .4s;
+                a{
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 500;
+                    transition: 5ms;
+                    .fas{
+                        margin-right: .7rem;
+                    }
+                }
+            }
+            li:hover{
+                background-color: $secondary-color;
+            }
+            
+        }
+    }
+}
+main{
+    font-family: $font-stack;
+    width: 100%;
+    height: 100vh;
+    background-color: #F8F8F8;
+    padding: 1rem 3rem;
+    
+    .profile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h1{
+            font-size: 28px;
+            color: $primary-color;
+            font-weight: 500;
+        }
+        .icons{
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            .icon-btn{
+                border-style: none;
+                width: 50px;
+                height: 50px;
+                background-color: white;
+                border-radius: 50px;
+                padding: .8rem .9rem;
+                cursor: pointer;
+                transition: .4s;
+                .far, .fas{
+                    font-size: 23px;
+                    color: $primary-color;
+                }
+            }
+            .icon-btn:hover{
+                background-color: $secondary-color;
+                .fas{
+                    color: white;
+                }
+                .far{
+                    color: white;
+                }
+            }
+        }
+    }
+}
